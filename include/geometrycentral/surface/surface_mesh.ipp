@@ -17,6 +17,15 @@ inline size_t SurfaceMesh::nEdges()             const { return nEdgesCount; }
 inline size_t SurfaceMesh::nFaces()             const { return nFacesCount; }
 inline size_t SurfaceMesh::nBoundaryLoops()     const { return nBoundaryLoopsCount; }
 
+// Fills
+inline size_t SurfaceMesh::nFillHalfedges()         const { return nHalfedgesFillCount; }
+inline size_t SurfaceMesh::nFillCorners()           const { return nHalfedgesFillCount; }
+inline size_t SurfaceMesh::nFillVertices()          const { return nVerticesFillCount; }
+inline size_t SurfaceMesh::nFillEdges()             const { return nEdgesFillCount; }
+inline size_t SurfaceMesh::nFillFaces()             const { return nFacesFillCount; }
+inline size_t SurfaceMesh::nFillBoundaryLoops()     const { return nBoundaryLoopsFillCount; }
+
+
 // Capacities
 inline size_t SurfaceMesh::nHalfedgesCapacity()        const { return nHalfedgesCapacityCount; }
 inline size_t SurfaceMesh::nVerticesCapacity()         const { return nVerticesCapacityCount; }

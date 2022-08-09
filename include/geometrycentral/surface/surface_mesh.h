@@ -71,6 +71,14 @@ public:
   size_t nBoundaryLoops() const;
   size_t nExteriorHalfedges() const;
 
+  // Number of filled mesh elements of each type
+  size_t nFillHalfedges() const;
+  size_t nFillCorners() const;
+  size_t nFillVertices() const;
+  size_t nFillEdges() const;
+  size_t nFillFaces() const;
+  size_t nFillBoundaryLoops() const;
+
   // Methods for range-based for loops
   // Example: for(Vertex v : mesh.vertices()) { ... }
   HalfedgeSet halfedges();
